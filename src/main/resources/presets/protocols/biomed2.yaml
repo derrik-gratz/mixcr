@@ -3,6 +3,8 @@
   label: "BIOMED2 IGH"
   category: non-generic
   inheritFrom: generic-amplicon
+  defaultChains:
+    - IGHeavy
   pipeline:
     - align
     - assemble
@@ -31,6 +33,8 @@
   label: "BIOMED2 IGK/IGL"
   category: non-generic
   inheritFrom: generic-amplicon
+  defaultChains:
+    - IGLight
   pipeline:
     - align
     - assemble
@@ -52,6 +56,10 @@
   label: "BIOMED2 TCR Beta/Delta/Gamma"
   category: non-generic
   inheritFrom: generic-amplicon
+  defaultChains:
+    - TCRBeta
+    - TCRGamma
+    - TCRDelta
   pipeline:
     - align
     - assemble

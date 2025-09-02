@@ -3,6 +3,11 @@
   label: "Human immunoglobulin repertoire"
   category: non-generic
   inheritFrom: generic-amplicon
+  defaultChains:
+    - IGHeavy
+    - IGLight
+    - TCRAlpha
+    - TCRBeta
   pipeline:
     - align
     - assemble
